@@ -6,7 +6,7 @@
       var origin, dest;
       origin = document.getElementById("from").value;
       dest = document.getElementById("to").value;
-      document.getElementById("directions").src = "https://maps.googleapis.com/maps/api/directions/json?origin=" + origin + "&destination=" + dest + "&key=AIzaSyACCFJnc8_DZHPIMLUqHJnpNmudKBGNoyI";
+      document.getElementById("directions").innerHTML = "https://maps.googleapis.com/maps/api/directions/json?origin=" + origin + "&destination=" + dest + "&key=AIzaSyACCFJnc8_DZHPIMLUqHJnpNmudKBGNoyI";
     }
   </script>
 </head>
@@ -16,6 +16,6 @@
     To: <input id="to" type="text">
   </form>
   <button onclick="getDirectionsURL()">Go!</button>
-  <iframe id="directions" src=""></iframe>
+  <p id="directions></p>
 </body>
 </html>
