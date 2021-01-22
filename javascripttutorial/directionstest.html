@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script>
+    function getDirectionsURL() {
+      var origin = document.getElementByID("from");
+      var dest = document.getElementByID("to);
+      document.getElementByID("directions").src = "https://maps.googleapis.com/maps/api/directions/json?origin="+origin+"&destination="+dest+"&key=AIzaSyACCFJnc8_DZHPIMLUqHJnpNmudKBGNoyI"
+    }
+  </script>
 </head>
 <body>
   <form id="navinput">
@@ -9,12 +16,5 @@
   </form>
   <button onclick="getDirectionsURL()">Go!</button>
   <iframe id="directions" src=""></iframe>
-  <script>
-    function getDirectionsURL() {
-      var origin = document.getElementByID("from");
-      var dest = document.getElementByID("to);
-      document.getElementByID("directions").src = "https://maps.googleapis.com/maps/api/directions/json?origin="+origin+"&destination="+dest+"&key=AIzaSyACCFJnc8_DZHPIMLUqHJnpNmudKBGNoyI"
-    }
-  </script>
 </body>
 </html>
