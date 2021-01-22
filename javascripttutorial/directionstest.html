@@ -4,9 +4,9 @@
   <script>
     function getDirectionsURL() {
       var origin, dest;
-      origin = document.getElementByID("from");
-      dest = document.getElementByID("to");
-      document.getElementByID("directions").src = "https://maps.googleapis.com/maps/api/directions/json?origin=" + origin + "&destination=" + dest + "&key=AIzaSyACCFJnc8_DZHPIMLUqHJnpNmudKBGNoyI";
+      origin = document.getElementById("from");
+      dest = document.getElementById("to");
+      document.getElementById("directions").src = "https://maps.googleapis.com/maps/api/directions/json?origin=" + origin + "&destination=" + dest + "&key=AIzaSyACCFJnc8_DZHPIMLUqHJnpNmudKBGNoyI";
     }
   </script>
 </head>
