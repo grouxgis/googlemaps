@@ -3,9 +3,17 @@
 <head>
 </head>
 <body>
-  <form>
-    From: <input type="text">
-    To: <input type="text">
-<iframe></iframe>
+  <form id="navinput">
+    From: <input id="from" type="text">
+    To: <input id="to" type="text">
+  </form>
+<iframe id="directions" src=""></iframe>
+  <script>
+    function getDirectionsURL() {
+      var origin = document.getElementByID("from");
+      var dest = document.getElementByID("to);
+      document.getElementByID("directions").src = "https://maps.googleapis.com/maps/api/directions/json?origin="+origin+"&destination="+dest+"&key=AIzaSyACCFJnc8_DZHPIMLUqHJnpNmudKBGNoyI"
+    }
+  </script>
 </body>
 </html>
