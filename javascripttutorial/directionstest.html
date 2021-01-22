@@ -7,7 +7,8 @@
     From: <input id="from" type="text">
     To: <input id="to" type="text">
   </form>
-<iframe id="directions" src=""></iframe>
+  <button onclick="getDirectionsURL()">Go!</button>
+  <iframe id="directions" src=""></iframe>
   <script>
     function getDirectionsURL() {
       var origin = document.getElementByID("from");
