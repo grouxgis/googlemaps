@@ -4,8 +4,8 @@
   <script>
     function getDirectionsURL() {
       var origin, dest;
-      origin = document.getElementById("from");
-      dest = document.getElementById("to");
+      origin = document.getElementById("from").value;
+      dest = document.getElementById("to").value;
       document.getElementById("directions").src = "https://maps.googleapis.com/maps/api/directions/json?origin=" + origin + "&destination=" + dest + "&key=AIzaSyACCFJnc8_DZHPIMLUqHJnpNmudKBGNoyI";
     }
   </script>
