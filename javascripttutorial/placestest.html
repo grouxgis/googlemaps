@@ -4,7 +4,7 @@
      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACCFJnc8_DZHPIMLUqHJnpNmudKBGNoyI&libraries=places">
      function getPlaceId() {
        var placein; 
-       placein =  document.getElementById("input").value;
+       placein = document.getElementById("input").value;
        const autocomplete = new google.maps.places.Autocomplete(placein);
        autocomplete.setFields(["place_id", "geometry", "name"]);
        var place = autocomplete.getPlace();
