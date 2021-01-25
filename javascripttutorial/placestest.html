@@ -62,11 +62,9 @@
     <form id="navinput">
     Place: <input id="input" type="text">
   </form>
-  <button id="gobutton">Go!</button>
+  <button onclick="getPlaceId()">Go!</button>
   <p id="place"></p>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACCFJnc8_DZHPIMLUqHJnpNmudKBGNoyI&libraries=places">
-     document.getElementById("gobutton").addEventListener("click", getPlaceID);
-
      function getPlaceId() {
        var placein; 
        placein =  document.getElementById("input").value;
