@@ -19,15 +19,5 @@
   </form>
   <button onclick="getPlaceId()">Go!</button>
   <p id="place"></p>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACCFJnc8_DZHPIMLUqHJnpNmudKBGNoyI&libraries=places">
-     function getPlaceId() {
-       var placein; 
-       placein =  document.getElementById("input").value;
-       const autocomplete = new google.maps.places.Autocomplete(placein);
-       var place = autocomplete.getPlace();
-       var placeid = place.place_id;
-       document.getElementById("place").innerHTML = "https://maps.googleapis.com/maps/api/place/details/json?place_id=" + placeid + "&fields=name, type&key=AIzaSyACCFJnc8_DZHPIMLUqHJnpNmudKBGNoyI";
-       }
-  </script>
   </body>
 </html>
