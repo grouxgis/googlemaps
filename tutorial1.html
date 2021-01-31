@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Yangmingshan National Park Map</title>
+	<script
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACCFJnc8_DZHPIMLUqHJnpNmudKBGNoyI&callback=initMap&libraries=&v=weekly"
+    defer
+	></script>
+	<style type="text/css">
+		#map {
+			height: 600px;
+			width: 100%;
+		}
+	</style>
+	<script>
+		function initMap() {
+			const yangmingshan = { lat: 25.1942462, lng: 121.5609363};
+			const map = new google.maps.Map(document.getElementById("map"), { zoom: 12, center: yangmingshan,
+			});
+			const marker = new google.maps.Marker({position: yangmingshan, map: map,
+			});
+		}
+	</script>
+  </head>
+  <body>
+	<h3>My Google Maps Demo: Yangmingshan National Park</h3>
+	<!-- The div element for the map -->
+	<div id="map"></div>
+  </body>
+</html>
