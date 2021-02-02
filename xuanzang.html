@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACCFJnc8_DZHPIMLUqHJnpNmudKBGNoyI&callback=initMap&libraries=&v=weekly"
+	defer>
+	</script>
+	<script src="xuanzangmap.js">
+	</script>
+	<style>
+	body, html {
+		margin: 0px;
+	}
+
+	header {
+		text-align: center;
+		background-color: #990000;
+		color: #d2bfac;
+		padding: 15px;
+		margin: 0px;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+
+	section {
+		margin: 120px 12.5% 10px;
+	}
+
+	#map {
+		width: 100%;
+		height: calc(100vh - 110px);
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>An Interactive Map of the Voyage of Xuanzang</h1>
+	</header>
+	<section>
+		<p>The buddhist monk Xuanzang is famous for his 7th century CE journey from China to India, with the goal of collecting Buddhist texts from their place of origin. His 16 year long journey took him from China, to Central Asia, to India, and eventually back again. The itinerary and information presented in this interactive map are taken from Sally Hovey Wriggin's biography, <i>Xuanzang: A Buddhist Pilgrim on the Silk Road</i>:</p>
+		<p>This map allows you to explore the first leg of Xuanzang's journey. Click on the markers below to learn more about his journey. Note that the route shown is highly approximate, only showing straight line paths between the locations Xuanzang visited and ignoring topography. The icon image is 'temple' by AFY Studio from the Noun Project.</p>
+		<p>Wriggins, Sally Hovey. <i>Xuanzang: A Buddhist Pilgrim on the Silk Road</i>. Boulder, CO: Westview Press, 1996. 
+	</section>
+	<div id="map"></div>
+</body>
+</html>
